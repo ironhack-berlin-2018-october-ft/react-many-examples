@@ -19,4 +19,5 @@ $ npm start
 
 ## Example3
 
-![Imgur](https://i.imgur.com/lifgMNw.png)
+<!-- ![Imgur](https://i.imgur.com/lifgMNw.png) -->
+![Imgur](https://i.imgur.com/lJoRK9U.gif)
