@@ -13,10 +13,10 @@ $ npm start
 
 ![Imgur](https://i.imgur.com/6uRt7d9.png)
 
-## Example2
+## Example2
 
 ![Imgur](https://i.imgur.com/md6mZ03.png)
 
-## Example3
+## Example3
 
 ![Imgur](https://i.imgur.com/lifgMNw.png)
