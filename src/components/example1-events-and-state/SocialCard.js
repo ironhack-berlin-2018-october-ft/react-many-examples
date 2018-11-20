@@ -33,8 +33,11 @@ class SocialCard extends Component {
         onMouseLeave={() => this.handleMouseonMouseLeave()}
         style={ { backgroundColor: this.state.isMouseIn ? "#DDDDFF" : "#EEEEFF" } }
       >
-        <img src={this.props.img} alt={this.props.name}/>   
-        <h2>{this.props.name} {this.state.isMouseIn && "!!!"}</h2>     
+        {/* The src image is either props.img1 or props.img2, depending of state.isMouseIn  */}
+        <img src={this.state.isMouseIn ? this.props.img2 :  this.props.img1} alt={this.props.name}/>  
+
+        <h2>{this.props.name}</h2>    
+         
         {/* Call the metod addLike on click */}
         <button onClick={() => this.addLike()}>
           {this.state.nbOfLikes} like{this.state.nbOfLikes !== 1 && 's'} 

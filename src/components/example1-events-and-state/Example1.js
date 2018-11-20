@@ -9,11 +9,13 @@ class Example1 extends Component {
         <div style={{display: "flex", flexWrap: 'wrap'}}>
           <SocialCard 
             name="Cat" 
-            img="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&h=350" 
+            img1="/images/cat1.jpg" 
+            img2="/images/cat2.jpg" 
           />
           <SocialCard 
             name="Dog" 
-            img="https://images.pexels.com/photos/485294/pexels-photo-485294.jpeg?auto=compress&cs=tinysrgb&h=350" 
+            img1="/images/dog1.jpg" 
+            img2="/images/dog2.jpg" 
           />
         </div>
       </div>
