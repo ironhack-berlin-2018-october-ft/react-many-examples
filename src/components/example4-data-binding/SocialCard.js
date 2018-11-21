@@ -1,21 +1,12 @@
-// SocialCard.js
-
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class SocialCard extends Component {
   constructor(props) {
     super(props)
     // Init the state
     this.state = {
-      nbOfLikes: 0,
       isMouseIn: false
     }
-  }
-  addLike() {
-    // Update the state
-    this.setState({
-      nbOfLikes: this.state.nbOfLikes + 1
-    })
   }
   handleMouseEnter() {
     this.setState({
@@ -41,8 +32,8 @@ class SocialCard extends Component {
         <h2>{this.props.name}</h2>    
          
         {/* Call the metod addLike on click */}
-        <button onClick={() => this.addLike()}>
-          {this.state.nbOfLikes} like{this.state.nbOfLikes !== 1 && 's'} 
+        <button onClick={this.props.onLike}>
+          {this.props.nbOfLikes} like{this.props.nbOfLikes !== 1 && 's'} 
         </button>
       </div>
     );
