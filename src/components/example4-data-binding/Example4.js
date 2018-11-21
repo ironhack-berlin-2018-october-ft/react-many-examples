@@ -24,15 +24,7 @@ export default class App extends Component {
   addLike(indexToAddLike) {
     this.setState({
       characters: this.state.characters.map((c,i) => {
-        console.log(i, indexToAddLike);
-        
         let nbOfLikes = c.nbOfLikes+(i === indexToAddLike ? 1 : 0)
-        console.log({
-          name: c.name,
-          img1: c.img1,
-          img2: c.img2,
-          nbOfLikes
-        })
         return {
           name: c.name,
           img1: c.img1,
